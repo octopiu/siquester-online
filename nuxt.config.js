@@ -63,4 +63,10 @@ export default {
 
   build: {
   }
+
+  target: 'static',
+
+  router: {
+    base: '/siquester-online/'
+  }
 }
