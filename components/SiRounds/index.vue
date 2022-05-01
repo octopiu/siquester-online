@@ -71,7 +71,7 @@ export default {
       await this.zipfile.loadAsync(e.target.files[0])
       const xmltext = await this.zipfile.file('content.xml').async('string')
       const parser = new DOMParser()
-      this.content = parser.parseFromString(xmltext, 'application/xml')
+      this.content = parser.parseFromString(xmltext.trim(), 'application/xml')
     },
     async onPackDrop (e) {
       e.preventDefault()
