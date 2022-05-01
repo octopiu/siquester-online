@@ -1,0 +1,9 @@
+{
+  "name": "siquester",
+  "short_name": "siquester",
+  "icons": [],
+  "start_url": "/siquester-online/?standalone=true",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "lang": "en"
+}
