@@ -1,0 +1,17 @@
+version: "3"
+
+services:
+  siquester:
+    build:
+      context: .
+    container_name: siquester
+    hostname: siquester
+    ports:
+      - '127.0.0.1:3000:3000'
+    working_dir: /app/src/
+    volumes:
+      - './:/app/src/'
+    tty: true
+    command: |
+      /bin/sh -c "npm run dev"
+    user: '1000:1000'
